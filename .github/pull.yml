@@ -1,0 +1,5 @@
+version: '1'
+rules:
+  - base: azure
+    upstream: RadoslavGatev:azure
+    mergeMethod: none # Manual Merge

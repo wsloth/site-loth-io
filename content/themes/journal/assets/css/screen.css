@@ -164,6 +164,7 @@
     width: 64px;
     height: 64px;
     margin-right: 2rem;
+    border-radius: 8px;
 }
 
 .gh-about-wrapper {

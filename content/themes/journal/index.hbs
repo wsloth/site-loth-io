@@ -9,7 +9,7 @@
                         <a class="gh-card-link" href="{{url}}">
                             <header class="gh-card-header">
                                 <div class="gh-article-meta">
-                                    <span class="gh-card-date">Latest in {{primary_tag.name}} — <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></span>
+                                    <span class="gh-card-date">Latest post {{tags separator=" &bull; " prefix="in"}} — <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></span>
                                 </div>
 
                                 <h2 class="gh-article-title gh-card-title">{{title}}</h2>
@@ -106,7 +106,7 @@
                                 <a class="gh-topic-item" href="{{url}}">
                                     <h3 class="gh-topic-name">{{name}}</h3>
                                     <span class="gh-topic-count">
-                                        {{plural count.posts empty="0 posts" singular="% issue" plural="% posts"}}
+                                        {{plural count.posts empty="0 posts" singular="% post" plural="% posts"}}
                                     </span>
                                 </a>
                             {{/foreach}}

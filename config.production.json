@@ -1,17 +1,34 @@
 {
-    "database": {
-        "client": "sqlite3",
-        "connection": {
-            "filename": "content/data/ghost.db"
-        },
-        "debug": false
+  "url": "https://loth.io",
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "content/data/ghost.db"
     },
-    "paths": {
-        "contentPath": "content/"
-    },
-    "caching": {
-		"frontend": {
-			"maxAge": 600
-		}
-	}
+    "debug": false
+  },
+  "paths": {
+    "contentPath": "content/"
+  },
+  "caching": {
+    "frontend": {
+      "maxAge": 600
+    }
+  },
+  "mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Mailgun",
+      "host": "smtp.mailgun.org",
+      "port": 587,
+      "secure": true,
+      "auth": {
+        "user": "postmaster@example.mailgun.org",
+        "pass": "1234567890"
+      }
+    }
+  },
+  "tls": {
+    "rejectUnauthorized": false
+  }
 }
